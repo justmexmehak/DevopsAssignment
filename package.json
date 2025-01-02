@@ -21,7 +21,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
@@ -48,5 +48,4 @@
     "vite": "^4.5.5",
     "vitest": "^0.34.6"
   },
-  "homepage": "https://justmexmehak.github.io/DevopsAssignment"
 }
