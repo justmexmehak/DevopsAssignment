@@ -1,4 +1,5 @@
 {
+  "homepage": "https://justmexmehak.github.io/devops-assignment",
   "name": "codespaces-react",
   "version": "0.1.0",
   "private": true,
@@ -47,5 +48,5 @@
     "jsdom": "^22.1.0",
     "vite": "^4.5.5",
     "vitest": "^0.34.6"
-  },
+  }
 }
