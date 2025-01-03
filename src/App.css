@@ -29,3 +29,23 @@
 .small {
   font-size: 0.75rem;
 }
+
+.radio-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.radio-buttons label {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.radio-buttons input[type="radio"] {
+  margin-right: 10px;
+}

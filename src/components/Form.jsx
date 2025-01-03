@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import './styles/Form.css';
+
+import axios from 'axios';
+
 class Form extends Component {
 
     constructor(props) {
@@ -22,6 +25,29 @@ class Form extends Component {
     handleSubmit = (event) => {
         alert(`${this.state.name} ${this.state.address} ${this.state.gender}`)
         event.preventDefault()
+
+        const { name, address, gender, email, age } = this.state;
+        const data = {
+            full_name: name,
+            email: email,
+            age: age,
+            gender: gender,
+            address: address
+        };
+
+        axios.post('https://mehak23.pythonanywhere.com/api/create-app-user/', data, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => {
+            console.log(response);
+            alert('Form submitted successfully');
+        })
+        .catch(error => {
+            console.error('There was an error submitting the form!', error);
+        });
+
     }
 
     render () {
