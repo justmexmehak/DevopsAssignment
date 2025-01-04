@@ -47,5 +47,7 @@
 }
 
 .radio-buttons input[type="radio"] {
+  display: none;
   margin-right: 10px;
 }
+

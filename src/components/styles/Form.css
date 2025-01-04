@@ -46,3 +46,37 @@ button:hover {
     background-color: #0056b3;
 }
 
+.users {
+    margin-top: 40px;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ccc;
+    text-align: left;
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icons i {
+    cursor: pointer;
+    color: #333;
+}
+
+.edit:hover {
+    color: #007bff;
+}
+
+.delete:hover {
+    color: #ff0000;
+}
